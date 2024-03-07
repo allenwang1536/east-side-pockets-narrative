@@ -12,10 +12,13 @@
         <h1>East Side Pockets Website</h1>
         <h3>Web Development + Design</h3>
         <h3>HTML/CSS | Spring 2024</h3>
-        <p class="overview">
-          I was tasked to redesign the East Side Pockets website to appeal more to their target demographic.
-        </p>
-        <p>The link to the deployed website can be found <a href="https://allenw.co/east-side-pockets/" target="_blank">here</a></p>
+        <div class="overview">
+          <p>I was tasked to redesign the East Side Pockets website to appeal more to their target demographic.</p>
+          <p>
+            The link to the deployed website can be found
+            <a href="https://allenw.co/east-side-pockets/" target="_blank">here</a>
+          </p>
+        </div>
       </div>
       <div class="section">
         <h2>Initial Observations</h2>
@@ -24,11 +27,12 @@
 
           <div class="body">
             <div class="images-container">
-                <img src="images/original-east.png" alt="Original East Side Pockets Website" />
+              <img src="images/original-east.png" alt="Original East Side Pockets Website" />
             </div>
             <p>
-              This was the original website that I chose. After conducting analysis of the site, I came up with the
-              following fixes:
+              I chose to redesign the <a href="https://www.eastsidepocket.com/">East Side Pockets Website</a> because of
+              the immediate contrast and organization errors that jumped out to me. After a more thorough analysis of
+              the site, I came up with the following problems + fixes:
             </p>
             <li>
               <b>Navigation Simplification:</b> Streamline the navigation by reducing the number of headers, which will
@@ -86,11 +90,14 @@
           <h3>Sketches</h3>
           <div class="body">
             <p>
-                I began the visual redesign process by sketching out 9 different frames of potential ideas, giving 
-                1 minute to each frame.
+              I began the visual redesign process by sketching out 9 different frames of potential ideas, giving 1
+              minute to each frame. Then, I created a final sketch that drew components from each idea.
             </p>
             <div class="images-container">
-              <img src="images/redesign/sketches.png" alt="Sketches" />
+              <div class="small-container">
+                <img src="images/redesign/sketches.png" alt="Sketches" />
+                <img src="images/redesign/final-sketch.png" alt="Final Sketch" />
+              </div>
             </div>
           </div>
         </div>
@@ -98,8 +105,9 @@
           <h3>Low and High Fidelity Wireframing</h3>
           <div class="body">
             <p>
-                Then, I came up with the low-fidelity and high-fidelity designs based off my initial sketches
-                and the issues I was trying to solve (view the comments in red).
+              Then, I came up with the low-fidelity and high-fidelity designs based off my initial sketches and the
+              issues I was trying to solve (view the comments in red). The designs are in order of: desktop, tablet,
+              mobile.
             </p>
             <div class="images-container">
               <div class="small-container">
@@ -118,7 +126,10 @@
         <div class="subsection">
           <h3>Visual Design Guide</h3>
           <div class="body">
-            <p>Here's the documentation of the design that displays main colors, typography, and reusable components' different states </p>
+            <p>
+              Here's the documentation of the design that displays main colors, typography, and reusable components'
+              different states. I created for convenience in case I pass the project off to someone else.
+            </p>
             <div class="images-container">
               <img src="images/redesign/style-guide.png" alt="Style Guide" />
             </div>
@@ -132,25 +143,57 @@
           <div class="body">
             <p>
               I used HTML/CSS + JS in order to create the website page. I started by initially plotting out the overall
-              layout of the page, then later polished the more granular details. As I was coding it up, there were some
-              challenges in resizing that I fixed by employing media breakpoint queries.
+              layout of the page, then later polished the more granular details. One notable challenge I ran into was
+              the resizing of the screens. To fix this, I had to play around with custom font-weights and image sizes /
+              layouts at each different width breakpoint.
             </p>
           </div>
         </div>
         <div class="subsection">
           <h3>Finished Products</h3>
           <div class="body">
+            <p>
+              And finally here is what the completed product looks like! You can also check it out at
+              <a href="https://allenw.co/east-side-pockets/">https://allenw.co/east-side-pockets/</a>
+            </p>
             <div class="images-container">
+              <p>Desktop Final Version</p>
+              <img src="images/final-site/desktop.png" alt="Desktop Final Version" />
+              <p>Tablet Final Version</p>
+              <img src="images/final-site/tablet.png" alt="Tablet Final Version" />
+              <p>Mobile Final Version</p>
               <div class="small-container">
-                <img src="images/final-site/desktop.png" alt="Desktop Final Version" />
-                <img src="images/final-site/tablet.png" alt="Tablet Final Version" />
-                <div class="small-container">
-                  <img src="images/final-site/mobile-1.png" alt="Mobile 1 Final Version" />
-                  <img src="images/final-site/mobile-2.png" alt="Mobile 2 Final Version" />
-                  <img src="images/final-site/mobile-3.png" alt="Mobile 3 Final Version" />
-                </div>
+                <img src="images/final-site/mobile-1.png" alt="Mobile 1 Final Version" />
+                <img src="images/final-site/mobile-2.png" alt="Mobile 2 Final Version" />
+                <img src="images/final-site/mobile-3.png" alt="Mobile 3 Final Version" />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Reflections</h2>
+        <div class="subsection">
+          <div class="body">
+            <h3>A few thoughts...</h3>
+            <li>
+                When I initially redesigned this website, I was a little overwhelmed because my mindset was to 
+                redesign the entire site from scratch. However, I've learned that that's unecessary and that designers
+                will often imitate components from their favorite websites. 
+            </li>
+            <li>
+                Even with the above in mind, it was still difficult to figure out the style of the site--specifically its layout 
+                and color. My personal favorite websites are clean, sleek, tech blog type websites, so that's where I initially drew
+                inspiration from. However, I quickly realized that that didn't fit in with the message that East Side Pockets 
+                was trying to generate (more of a ~home-y and earth-y feel). 
+            </li>
+            <li>
+                I actually haven't created a pure HTML/CSS website before this (only React), and it surprised me
+                how simple but powerful the basics are. Perhaps I'll make more of these type of lightweight sites.
+            </li>
+
+            Overall, this project was a great opportunity for me to experience the full cycle of designing, iterating,
+            and prototyping a legitimate website. I'm really glad I took on this project and I'm excited for future design works!
           </div>
         </div>
       </div>
